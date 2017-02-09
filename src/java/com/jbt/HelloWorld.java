@@ -40,7 +40,7 @@ public class HelloWorld extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet HelloWorld at " + request.getContextPath() + " - Github example</h1>");
-            out.println("<h2>Servlet HelloWorld at " + request.getContextPath() + " - Webhook attempt 3</h2>");
+            out.println("<h2>Servlet HelloWorld at " + request.getContextPath() + " - Webhook attempt 4</h2>");
             out.println("</body>");
             out.println("</html>");
         }
