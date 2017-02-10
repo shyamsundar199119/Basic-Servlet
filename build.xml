@@ -56,9 +56,9 @@
 
     Example of overriding the target for project execution could look like 
 -->
-       <target name="run" depends="<PROJNAME>-impl.jar">
+       <target name="run" depends="${test}-impl.jar">
             <exec dir="bin" executable="launcher.exe">
-                <arg file="${test}"/>
+                <arg file="${dist.jar}"/>
             </exec>
         </target>
 <!--
