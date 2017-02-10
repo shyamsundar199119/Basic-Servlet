@@ -55,13 +55,13 @@
       javadoc-build:          javadoc generation 
 
     Example of overriding the target for project execution could look like 
-
+-->
        <target name="run" depends="<PROJNAME>-impl.jar">
             <exec dir="bin" executable="launcher.exe">
-                <arg file="${dist.jar}"/>
+                <arg file="${test}"/>
             </exec>
         </target>
-
+<!--
     Notice that overridden target depends on jar target and not only on 
     compile target as regular run target does. Again, for list of available 
     properties which you can use check the target you are overriding in 
