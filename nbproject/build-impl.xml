@@ -26,7 +26,10 @@
             </not>
         </condition>
     </fail>
-    <target depends="dist,javadoc" description="Build whole project." name="default"/>
+    <target depends="dist,javadoc" description="Build whole project." name="default">
+		<echo>Env check ${test}</echo>
+		<echo message="${javac.includes.binary}"/>
+	</target>
     <!--
                 INITIALIZATION SECTION
             -->
